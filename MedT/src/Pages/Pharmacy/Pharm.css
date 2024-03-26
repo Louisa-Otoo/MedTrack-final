@@ -1,0 +1,351 @@
+.mainp {
+  padding: 1rem;
+}
+
+.inph { 
+    padding: 1rem;
+} 
+
+/* form styling */
+.ph { 
+    padding: 1.5rem;
+}
+
+.pharmTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.grup {
+  height: 45vh;
+  width: 32rem;
+  margin: 0 1rem 1rem 1rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 0 0.1rem 0.2rem var(--background-text);
+}
+
+.formHeading {
+  color: var(--background-text); 
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  font-weight: normal;
+} 
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formControl {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.formControl label {
+  width: 200px; 
+  width: 11rem;
+  text-align: left; 
+  display: inline-block;
+  color: var(--background-text);
+  font-weight: bold;
+}
+
+.formControl input,
+.formControl select {
+  height: 2rem;
+  padding: .4rem 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-color-two);
+  margin-right: 1rem;
+  color: var(--background-text-two);
+}
+
+.formControl input,
+.formControl textarea {
+  width: 30rem;
+  border: 1px solid var(--border-color-three);
+  outline: none;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+}
+
+/* .addBtn {
+  background: rgb(173, 173, 248);
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none; 
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.5rem;
+  background: #181f6f;
+  color: #f4f7f8;
+  background: linear-gradient(#f4f7f8, #181f6f);
+  color: #181f6f;
+}  */
+
+.grup button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none; 
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.5rem;
+  background: var(--button-color-four);
+  color: var(--background-color);
+}
+
+.grup button:hover {
+  background: var(--background-color);
+  color: var(--background-text);
+  border: 2px solid var(--button-color-four);
+  font-weight: 550;
+  cursor: pointer;
+}
+
+/* table style */
+.ptable {
+  margin: 1.5rem 1rem 1rem 1rem;
+}
+
+.ptable table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 1rem;
+}
+
+.ptable th, .ptable td {
+  border:  1px solid var(--border-color-six);
+  padding: 8px;
+  text-align: left;
+}
+
+.ptable th {
+  font-size: 0.9rem;
+  background: var(--logo-text-one);
+  color: var(--background-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.ptable td:hover {
+  background-color: var(--hover-color-one);
+  cursor: pointer;
+}
+
+
+/* the search */
+.search {
+    position: relative;
+    display: inline-block;
+}
+
+.search .searchBox {
+    height: 2rem;
+    width: 7rem;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border-color-one);
+    outline: none;
+    transition: width 0.4s ease-in-out;
+    box-shadow: 0 0.1rem 0.2rem var(--button-color-four); 
+}
+
+.search .searchBox:focus {
+    width: 18rem;
+}
+
+.search .searchIcon {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem; 
+    transform: translateY(-50%);
+    color: var(--search-color); 
+  } 
+
+.viewBtn, .upBtn, .delBtn {
+  padding: 0.2rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  background: transparent;
+} 
+
+.viewBtn {
+  color: var(--button-color-one);
+  border: 2px solid var(--button-color-one);
+  background: transparent;
+}
+
+.viewBtn:hover, .viewBtn:focus, .viewBtn:visited {
+  background: var(--button-color-one);
+  color: var(--font-color-one);
+}
+
+.upBtn {
+  color: var(--button-color-two);
+  border: 2px solid var(--button-color-two);
+  background: transparent;
+}
+
+.upBtn:hover, .upBtn:focus, .upBtn:visited {
+  background: var(--button-color-two);
+  color: var(--font-color-one);
+}
+
+.delBtn {
+  color: var(--button-color-three);
+  border: 2px solid var(--button-color-three);
+  background: transparent;
+}
+
+.delBtn:hover, .delBtn:focus, .delBtn:visited {
+  background: var(--button-color-three);
+  color: var(--font-color-one);
+}
+
+/* modal buttons */
+.delModalBtn_no, .delModalBtn_yes {
+  margin: .5rem;
+  padding: .5rem .9rem; 
+  cursor: pointer; 
+  border: none;
+  border-radius: 0.5rem;
+  background: transparent;
+}
+
+.delModalBtn_no {
+  color: var(--button-color-two);
+  font-weight: bold;
+  border: 2px solid var(--button-color-two);
+}
+
+.delModalBtn_yes { 
+  color: var(--button-color-three);
+  font-weight: bold;
+  border: 2px solid var(--button-color-three);
+  background: transparent;
+}
+
+.delModalBtn_no:hover, .delModalBtn_no:focus,
+.delModalBtn_yes:hover, .delModalBtn_yes:focus {
+  font-weight: bold;
+}
+
+.backBtn {
+  padding: .5rem .9rem; 
+  margin: 1rem 1rem 0 0;
+  cursor: pointer;
+  color: var(--font-color-one); 
+  background: var(--button-color-four);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  align-self: center;
+}
+
+.backBtn:hover, .backBtn:focus {
+  color: var(--button-color-four);
+  border: 2px solid var(--button-color-four);
+  background: transparent;
+}
+
+.upModalBtn {
+  padding: .5rem .9rem;
+  color: var(--font-color-one);
+  cursor: pointer; 
+  background: var(--button-color-two);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.upModalBtn:hover, .upModalBtn:focus {
+  color: var(--button-color-two);
+  border: 2px solid var(--button-color-two);
+  background: transparent;
+}
+
+
+/* pagination styles */
+.pharmPagination {
+  display: flex;;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.page-item {
+  border: 1px solid var(--border-color-four);
+  font-size: 1rem;
+  background-color: var(--background-color-two);
+  font-family: inherit;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 0.4rem;
+  margin-right: 0.4rem;
+}
+
+.page-item a {
+  text-decoration: none;
+  color: var(--background-text);
+}
+
+.page-link {
+  display: block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  color: var(--background-text); 
+}
+
+.page-item.active .page-link {
+  background: var(--background-color-three);
+  color: var(--font-color-one);
+  font-weight: 700;
+}
+
+.modalTablep tr td label {
+  color: #00171f;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.modalTablep tr td input,
+.modalTablep tr td textarea {
+  color: #1f0083;
+  font-size: 0.9rem;
+  padding: 1rem 1.5rem;
+  margin: .3rem;
+  border-radius: 5px;
+  border: 1px solid #e4e9e7;
+  background-color: #d6d6d6;
+}
+
+.modalTablep tr td {
+  border: .5px solid #407385;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .pharmTop {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+}
