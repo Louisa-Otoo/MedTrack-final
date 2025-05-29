@@ -8,7 +8,7 @@ A full-stack inventory management application designed for laboratories and phar
 - Real-time inventory tracking
 - Add, update, and delete laboratory and drug items
 - Search and filter functionality
-- Responsive front-end using React.js
+- User-friendly front-end using React.js
 - Dynamic data storage with MongoDB
 
 
