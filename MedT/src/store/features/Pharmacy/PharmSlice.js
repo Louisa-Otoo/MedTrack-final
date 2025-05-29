@@ -1,5 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
+const BASE_URL = import.meta.env.VITE_API_BASE_URL.replace(/\/+$/, '');
+
 const initialState = {
     pharmItems: [],
     loading: false,
@@ -8,7 +10,7 @@ const initialState = {
 
 export const addPharmThunk = createAsyncThunk("pharmItems/addPharm", async(newMedicine) => {
     try {
-        const response = await fetch("http://localhost:9000/api/medicines", {
+        const response = await fetch(`${BASE_URL}/api/medicines`, {
             method: "POST",
             body: JSON.stringify(newMedicine),
             headers: {
@@ -24,7 +26,7 @@ export const addPharmThunk = createAsyncThunk("pharmItems/addPharm", async(newMe
 
 export const fetchPharmThunk = createAsyncThunk("pharmItems/fetchPharm", async() =>  {
     try {
-        const response = await fetch("http://localhost:9000/api/medicines");
+        const response = await fetch(`${BASE_URL}/api/medicines`);
         const data = await response.json();
         // console.log('pharmslice',data)
         return data;
@@ -36,7 +38,7 @@ export const fetchPharmThunk = createAsyncThunk("pharmItems/fetchPharm", async()
 export const updatePharmThunk = createAsyncThunk("pharmItems/updatePharm", async(medicines) => {
     console.log("medicine", medicines)
     try {
-        const response = await fetch(`http://localhost:9000/api/medicines/${medicines.id}`, {
+        const response = await fetch(`${BASE_URL}/api/medicines/${medicines.id}`, {
             method: "PUT",
             body: JSON.stringify(medicines),
             headers: {
@@ -52,7 +54,7 @@ export const updatePharmThunk = createAsyncThunk("pharmItems/updatePharm", async
 
 export const removePharmThunk = createAsyncThunk("pharmItems/removePharm", async(_id) => {
     try {
-        const response = await fetch(`http://localhost:9000/api/medicines/${_id}`, {
+         const response = await fetch(`${BASE_URL}/api/medicines/${_id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
