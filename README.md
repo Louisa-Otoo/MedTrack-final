@@ -30,7 +30,7 @@ A full-stack inventory management application designed for laboratories and phar
 - Scalable and adaptable for small clinics or large medical labs
 
 ---
-## Demo
+## 🚀 Demo
 [View Project Here](https://medtrack-frontend-2cb0.onrender.com) 
 
 ---
