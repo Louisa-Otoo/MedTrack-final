@@ -2,6 +2,7 @@
 
 A full-stack inventory management application designed for laboratories and pharmacies. This system helps users efficiently manage and track medical supplies, laboratory items, and drug inventories.
 
+---
 
 ## 🔍 Features
 
@@ -11,6 +12,11 @@ A full-stack inventory management application designed for laboratories and phar
 - User-friendly front-end using React.js
 - Dynamic data storage with MongoDB
 
+---
+## Demo
+[View Project Here](https://medtrack-frontend-2cb0.onrender.com) 
+
+---
 
 ## 🧰 Tech Stack
 
@@ -19,9 +25,12 @@ A full-stack inventory management application designed for laboratories and phar
 - Database: MongoDB
 - Version Control: Git + GitHub
 
+---
 
 ## 📈 Impact
 
 - Reduced inventory retrieval time
 - Enhanced efficiency in inventory management workflows
 - Scalable and adaptable for small clinics or large medical labs
+
+---
