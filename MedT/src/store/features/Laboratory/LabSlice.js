@@ -1,5 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
+const BASE_URL = import.meta.env.VITE_API_BASE_URL.replace(/\/+$/, '');
+
 const initialState = {
     labItems: [],
     loading: false,
@@ -8,7 +10,7 @@ const initialState = {
 
 export const addLabThunk = createAsyncThunk("labItems/addLab", async(newLabItem) => {
     try {
-        const response = await fetch("http://localhost:9000/api/equipment", {
+        const response = await fetch(`${BASE_URL}/api/equipment`, {
             method: "POST",
             body: JSON.stringify(newLabItem),
             headers: {
@@ -25,7 +27,7 @@ export const addLabThunk = createAsyncThunk("labItems/addLab", async(newLabItem)
 
 export const fetchLabThunk = createAsyncThunk("labItems/fetchLab", async() => {
     try {
-        const response = await fetch("http://localhost:9000/api/equipment");
+        const response = await fetch(`${BASE_URL}/api/equipment`);
         const data = await response.json();
         console.log("labslice", data)
         return data;
@@ -37,7 +39,7 @@ export const fetchLabThunk = createAsyncThunk("labItems/fetchLab", async() => {
 export const updateLabThunk = createAsyncThunk("labItems/updateLab", async(equipment) => {
     console.log("equipment", equipment);
     try {
-        const response = await fetch(`http://localhost:9000/api/equipment/${equipment.id}`, {
+        const response = await fetch(`${BASE_URL}/api/equipment/${equipment.id}`, {
             method: "PUT",
             body: JSON.stringify(equipment),
             headers: {
@@ -53,7 +55,7 @@ export const updateLabThunk = createAsyncThunk("labItems/updateLab", async(equip
 
 export const removeLabThunk = createAsyncThunk("labItems/removeLab", async(_id) => {
     try {
-        const response = await fetch(`http://localhost:9000/api/equipment/${_id}`, {
+        const response = await fetch(`${BASE_URL}/api/equipment/${_id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
