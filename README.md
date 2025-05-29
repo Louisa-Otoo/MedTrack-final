@@ -13,10 +13,6 @@ A full-stack inventory management application designed for laboratories and phar
 - Dynamic data storage with MongoDB
 
 ---
-## Demo
-[View Project Here](https://medtrack-frontend-2cb0.onrender.com) 
-
----
 
 ## 🧰 Tech Stack
 
@@ -32,5 +28,9 @@ A full-stack inventory management application designed for laboratories and phar
 - Reduced inventory retrieval time
 - Enhanced efficiency in inventory management workflows
 - Scalable and adaptable for small clinics or large medical labs
+
+---
+## Demo
+[View Project Here](https://medtrack-frontend-2cb0.onrender.com) 
 
 ---
