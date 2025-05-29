@@ -13,4 +13,4 @@ Currently, two official plugins are available:
 
   - React Router
 
-  - Axios or Fetch API for HTTP requests
+  - Fetch API for HTTP requests
